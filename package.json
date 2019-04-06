@@ -1,0 +1,45 @@
+{
+  "name": "products-stock-checker",
+  "version": "1.0.0",
+  "description": "Products Stock Checker",
+  "license": "MIT",
+  "author": "Lester Chan <lesterchan@gmail.com> (https://lesterchan.net)",
+  "homepage": "https://github.com/lesterchan/products-stock-checker",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lesterchan/products-stock-checker.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/*.js",
+    "start": "node src/index.js"
+  },
+  "eslintConfig": {
+    "extends": "techinasia-base",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "no-unused-expressions": 0,
+      "func-names": 0,
+      "strict": 0,
+      "max-len": 0,
+      "no-console": 0,
+      "no-param-reassign": 0,
+      "no-return-await": 0
+    }
+  },
+  "devDependencies": {
+    "eslint": "~5.16.0",
+    "eslint-config-techinasia-base": "~0.8.0",
+    "eslint-plugin-import": "~2.16.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.2",
+    "console.table": "^0.10.0",
+    "date-fns": "^1.30.1"
+  }
+}
