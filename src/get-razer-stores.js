@@ -18,7 +18,12 @@ const storesJsonFile = '../data/razer-stores.json';
   const $ = cheerio.load(pageHtml);
   $('.container_sec ul li').each((i, elem) => {
     const storeElement = $(elem).children('a');
-    const storeCountry = $(elem).children('a').text();
+    let storeCountry = $(elem).children('a').text();
+    const parentCountry = $(elem).parent('ul.sub-ul');
+    if (parentCountry.length > 0) {
+      storeCountry = `${storeCountry} (${parentCountry.prev('a').text()})`;
+    }
+
     let localStoreUrl = storeElement.attr('href');
     if (localStoreUrl.startsWith('/')) {
       localStoreUrl = storeUrl + localStoreUrl;
