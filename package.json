@@ -12,7 +12,8 @@
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint src/*.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "razer": "node src/is-my-razer-product-available.js"
   },
   "eslintConfig": {
     "extends": "techinasia-base",
