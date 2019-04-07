@@ -47,8 +47,8 @@ const fetchProductLinks = async (parentLink, heroLinkElement, linkElement) => {
     if (productLink.startsWith('javascript')) {
       return;
     }
-    if (!data[productLink]) {
-      data[productLink] = productName;
+    if (!data[productName]) {
+      data[productName] = productLink;
     }
   });
   $productPage(linkElement).each((index, element) => {
@@ -59,8 +59,8 @@ const fetchProductLinks = async (parentLink, heroLinkElement, linkElement) => {
     if (productLink.startsWith('#')) {
       return;
     }
-    if (!data[productLink]) {
-      data[productLink] = productName;
+    if (!data[productName]) {
+      data[productName] = productLink;
     }
   });
 
