@@ -31,7 +31,7 @@ const storesJsonFile = '../data/razer-stores.json';
     if (!localStoreUrl.endsWith('/')) {
       localStoreUrl = `${localStoreUrl}/`;
     }
-    if (localStoreUrl.startsWith('http')) {
+    if (localStoreUrl.startsWith('https')) {
       storesData.stores.push({ name: `Razer ${storeCountry} Online Store`, url: localStoreUrl });
     }
   });
