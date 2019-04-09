@@ -3,7 +3,7 @@
 const { writeDataFile } = require('./helper');
 
 const storeUrlPrefix = 'https://www.lazada.sg/products';
-const storesJsonFile = '../data/lazada-stores.json';
+const storesJsonFile = 'data/lazada-stores.json';
 
 (async () => {
   const storesData = {

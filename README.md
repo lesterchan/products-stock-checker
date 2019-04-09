@@ -19,3 +19,9 @@ Checks Razer Core X availability on Razer Online Store, Lazada: Official Razer S
 ```npm run start```
 
 ![Razer Core X Availability In Singapore](/screenshots/2.png?raw=true "Razer Core X Availability In Singapore")
+
+## Usage: Update Razer Products
+
+Often, Razer will launch new products. Run this command to update the JSON file with the latest Razer products.
+
+```npm run razer-update-products```

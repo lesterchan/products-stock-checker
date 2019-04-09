@@ -6,7 +6,7 @@ const { fetchPageContents, writeDataFile } = require('./helper');
 
 const razerUrl = 'https://www.razer.com';
 const storeSlug = '/store';
-const productJsonFile = '../data/razer-products.json';
+const productJsonFile = 'data/razer-products.json';
 const productHeroLinkElement = 'a.categorised-content-latest';
 const productLinkElement = 'div.cta a.gtm_learn_more';
 const productParentMenuElement = 'ul.menu.level-one';

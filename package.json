@@ -13,7 +13,10 @@
   "scripts": {
     "lint": "eslint src/*.js",
     "start": "node src/index.js",
-    "razer": "node src/is-my-razer-product-available.js"
+    "razer": "node src/is-my-razer-product-available.js",
+    "razer-update-products": "node src/get-razer-products.js",
+    "razer-update-stores": "node src/get-razer-stores.js",
+    "lazada-update-stores": "node src/get-lazada-stores.js"
   },
   "eslintConfig": {
     "extends": "techinasia-base",

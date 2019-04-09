@@ -5,7 +5,7 @@ const cheerio = require('cheerio');
 const { fetchPageContents, writeDataFile } = require('./helper');
 
 const storeUrl = 'https://www.razer.com';
-const storesJsonFile = '../data/razer-stores.json';
+const storesJsonFile = 'data/razer-stores.json';
 
 (async () => {
   const storesData = {
