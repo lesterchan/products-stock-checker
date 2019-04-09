@@ -11,7 +11,7 @@ const { formatOutput, processStore } = require('./helper');
 const countrySingapore = 'Singapore';
 const razerStoreCoreXSlug = 'gaming-laptops/razer-core-x';
 
-(async () => {
+(() => {
   const storesPromises = [];
   [lazadaStores, razerStores].forEach((onlineStore) => {
     onlineStore.stores.forEach((store) => {

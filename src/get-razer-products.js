@@ -17,7 +17,7 @@ const fetchProductParentLinks = async (storeUrl, parentMenuElement, parentLinkEl
   const $ = cheerio.load(pageHtml);
   const data = [];
   $(parentMenuElement).children().first().find(parentLinkElement)
-    .each(async (i, elem) => {
+    .each((i, elem) => {
       const productParentLink = $(elem).attr('href');
       const productParentName = $(elem).text().trim().replace(' New', '');
       if (productParentLink === storeSlug) {

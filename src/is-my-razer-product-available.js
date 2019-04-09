@@ -20,7 +20,7 @@ const promptProduct = (category) => {
       choices: Object.keys(razerProducts.filter((product) => product.name === category)[0].products),
     },
     ])
-    .then(async (answer) => {
+    .then((answer) => {
       const storesPromises = [];
       razerStores.stores.forEach((store) => {
         storesPromises.push(processStore(razerStores.priceElement, razerStores.oosElement, store, store.url + razerAllProducts[answer.product]));
@@ -33,7 +33,7 @@ const promptProduct = (category) => {
     });
 };
 
-(async () => {
+(() => {
   inquirer
     .prompt([{
       type: 'list',

@@ -5,7 +5,7 @@ const { writeDataFile } = require('./helper');
 const storeUrlPrefix = 'https://www.lazada.sg/products';
 const storesJsonFile = 'data/lazada-stores.json';
 
-(async () => {
+(() => {
   const storesData = {
     oosElement: '.quantity-content-warning',
     priceElement: '.pdp-product-price .pdp-price',
