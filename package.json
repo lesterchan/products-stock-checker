@@ -35,7 +35,7 @@
     }
   },
   "devDependencies": {
-    "eslint": "^7.5.0",
+    "eslint": "^7.6.0",
     "eslint-config-techinasia-base": "~0.8.0",
     "eslint-plugin-import": "^2.22.0"
   },
@@ -44,6 +44,6 @@
     "chalk": "^4.1.0",
     "cheerio": "^1.0.0-rc.3",
     "console.table": "^0.10.0",
-    "inquirer": "^7.3.2"
+    "inquirer": "^7.3.3"
   }
 }
