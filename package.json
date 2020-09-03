@@ -35,12 +35,12 @@
     }
   },
   "devDependencies": {
-    "eslint": "^7.6.0",
+    "eslint": "^7.8.1",
     "eslint-config-techinasia-base": "~0.8.0",
     "eslint-plugin-import": "^2.22.0"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "chalk": "^4.1.0",
     "cheerio": "^1.0.0-rc.3",
     "console.table": "^0.10.0",
